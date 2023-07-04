@@ -11,14 +11,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/card_margin"
-        android:text="AirPower Login"
+        android:text="AirPower App"
         android:textSize="@dimen/card_title"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/logo_card"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="@dimen/card_corner"
+        android:layout_margin="@dimen/card_margin"
+        app:layout_constraintEnd_toEndOf="@+id/tv_login_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_login_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_title">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/airpower_launcher_icon"/>
+    </androidx.cardview.widget.CardView>
 
     <EditText
         android:id="@+id/et_login_email"
@@ -31,7 +47,7 @@
         android:textSize="@dimen/card_label"
         app:layout_constraintEnd_toEndOf="@+id/tv_login_title"
         app:layout_constraintStart_toStartOf="@+id/tv_login_title"
-        app:layout_constraintTop_toBottomOf="@+id/tv_login_title" />
+        app:layout_constraintTop_toBottomOf="@+id/logo_card" />
 
     <EditText
         android:id="@+id/et_login_password"

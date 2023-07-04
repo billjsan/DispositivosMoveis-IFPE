@@ -15,7 +15,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 class ConnectionManager {
 
-    private static final String AIR_POWER_SERVER_DOMAIN = "http://192.168.11.3:8080";
+    private static final String AIR_POWER_SERVER_DOMAIN = "http://192.168.11.5:8080";
     private static final String OPEN_WEATHER_DOMAIN = "https://api.openweathermap.org/data/2.5/";
     private static ConnectionManager instance;
     private static Retrofit mAirPowerServerConnection;
